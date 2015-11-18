@@ -16,10 +16,10 @@ def gameStart():
 		except ValueError:
 			print ("Please enter a number")
 			continue
-		except numberOfRounds < 1:
+		if numberOfRounds < 1:
 			print "The number of rounds must be bigger than zero"
 		else:	
 			#Succesful input
 			break
 		
-gamestart()		
+gameStart()		
