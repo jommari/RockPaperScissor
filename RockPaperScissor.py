@@ -9,7 +9,7 @@
 ###########################################################################
 
 #prompts the player for number of rounds
-def function gameStart():
+def gameStart():
 	while True:
 		try:
 			numberOfRounds = int(raw_input('Choose the number of rounds: \n'))
@@ -22,3 +22,4 @@ def function gameStart():
 			#Succesful input
 			break
 		
+gamestart()		
