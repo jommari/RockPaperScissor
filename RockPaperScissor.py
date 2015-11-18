@@ -18,8 +18,38 @@ def gameStart():
 			continue
 		if numberOfRounds < 1:
 			print "The number of rounds must be bigger than zero"
+			continue
 		else:	
 			#Succesful input
+			return numberOfRounds
 			break
-		
-gameStart()		
+
+#number of wins required
+roundsLeft = gameStart()			
+
+#prints how many rounds are left			
+print "\nRounds left: ", roundsLeft			
+#prompts the player for the hand of choice			
+def playerHand():
+	while True:
+		try:
+			playerHand = raw_input('Choose your hand: \n-A is Rock \n-B is Paper \n-C is Scissor \n').lower()
+		except:
+			pass
+		if playerHand == 'a':
+			print "You chose Rock!"
+			return playerHand
+			break
+		if playerHand == 'b':
+			print "You chose Paper!"
+			return playerHand
+			break
+		if playerHand == 'c':
+			print "You chose Scissors!"
+			return playerHand
+			break
+		else:
+			print "Please choose A, B or C \n"
+			continue
+			
+playerHand()			
