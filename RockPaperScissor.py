@@ -54,11 +54,10 @@ def playerHand():
 			print "Please choose A, B or C \n"
 			continue
 			
-playerHand()			
+		
 
 #Returns random chatacter to assign computers hand
 def computerHand():
 	randomNumber = random.choice('abc') #'a' == Rock, 'b' == Paper, 'c' == Scissors
 	return randomNumber
 	
-computerHand()
