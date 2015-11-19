@@ -13,12 +13,12 @@ import random
 def gameStart():
 	while True:
 		try:
-			numberOfRounds = int(raw_input('Choose the number of rounds: \n'))
+			numberOfRounds = int(raw_input('Choose the number of won rounds to end game: \n'))
 		except ValueError:
 			print ("Please enter a number")
 			continue
 		if numberOfRounds < 1:
-			print "The number of rounds must be bigger than zero"
+			print "The number must be bigger than zero\n"
 			continue
 		else:	
 			#Succesful input
@@ -37,15 +37,15 @@ def playerHand():
 		except:
 			pass
 		if playerHand == 'a':
-			print "You chose Rock!"
+			print "You chose Rock!\n"
 			return playerHand
 			break
 		if playerHand == 'b':
-			print "You chose Paper!"
+			print "You chose Paper!\n"
 			return playerHand
 			break
 		if playerHand == 'c':
-			print "You chose Scissors!"
+			print "You chose Scissors!\n"
 			return playerHand
 			break
 		else:
