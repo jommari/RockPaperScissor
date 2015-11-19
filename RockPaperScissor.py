@@ -25,11 +25,9 @@ def gameStart():
 			return numberOfRounds
 			break
 
-#number of wins required
-roundsLeft = gameStart()			
+		
 
-#prints how many rounds are left			
-print "\nRounds left: ", roundsLeft	
+
 		
 #prompts the player for the hand of choice			
 def playerHand():
