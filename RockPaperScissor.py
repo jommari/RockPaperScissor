@@ -7,6 +7,7 @@
 #If the round ends with a draw, neither gets a point.					  
 #game continues until chosen amount of rounds has been won.				  
 ###########################################################################
+import random
 
 #prompts the player for number of rounds
 def gameStart():
@@ -28,7 +29,8 @@ def gameStart():
 roundsLeft = gameStart()			
 
 #prints how many rounds are left			
-print "\nRounds left: ", roundsLeft			
+print "\nRounds left: ", roundsLeft	
+		
 #prompts the player for the hand of choice			
 def playerHand():
 	while True:
@@ -53,3 +55,10 @@ def playerHand():
 			continue
 			
 playerHand()			
+
+#Returns random chatacter to assign computers hand
+def computerHand():
+	randomNumber = random.choice('abc') #'a' == Rock, 'b' == Paper, 'c' == Scissors
+	return randomNumber
+	
+computerHand()
